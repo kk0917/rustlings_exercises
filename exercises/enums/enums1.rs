@@ -3,15 +3,15 @@
 
 #[derive(Debug)]
 enum Message {
-    Quit(String),
-    Echo(String),
-    Move(String),
-    ChangeColor(String)
+    Quit,
+    Echo,
+    Move,
+    ChangeColor
 }
 
 fn main() {
-    println!("{:?}", Message::Quit(String::from("Quit!")));
-    println!("{:?}", Message::Echo(String::from("Echo!")));
-    println!("{:?}", Message::Move(String::from("Move!")));
-    println!("{:?}", Message::ChangeColor(String::from("Change color!")));
+    println!("{:?}", Message::Quit);
+    println!("{:?}", Message::Echo);
+    println!("{:?}", Message::Move);
+    println!("{:?}", Message::ChangeColor);
 }
