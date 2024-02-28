@@ -11,12 +11,12 @@ fn compose_me(input: &str) -> String {
     // return input.to_string() + " world!";
     let mut strToStr: String = input.to_string();
     strToStr.push_str(" world!");
-    return strToStr;
+    strToStr
 }
 
 fn replace_me(input: &str) -> String {
     // TODO: Replace "cars" in the string with "balloons"!
-    return input.to_string().replace("cars", "balloons")
+    input.to_string().replace("cars", "balloons")
 }
 
 #[cfg(test)]

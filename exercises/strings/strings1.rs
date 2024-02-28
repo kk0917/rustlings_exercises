@@ -8,5 +8,6 @@ fn main() {
 }
 
 fn current_favorite_color() -> String {
-    return "blue".to_string();
+    let color = String::from("blue");
+    color
 }
